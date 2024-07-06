@@ -3,6 +3,7 @@ import { Box, IconButton, Tooltip } from '@mui/material';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useFeedbackState from 'src/hooks/useFeedbackState';
+import MockLogo from '../Logo';
 
 
 export interface AdminDrawerProps {
@@ -38,23 +39,7 @@ const AdminDrawer: React.FC<AdminDrawerProps> = (props: AdminDrawerProps) => {
             }
         }}
     >
-        <Box
-            onClick={() => navigate('/')}
-
-            position={'relative'}
-            sx={{
-                marginY: {
-                    xs: '0px',
-                    md: '1em'
-                },
-                borderBottom: {
-                    xs: 'none',
-                    md: '1px solid grey'
-                }
-            }}
-        >
-            <img src="/logo.png" alt="" width={'50px'} style={{ cursor: 'pointer' }} />
-        </Box>
+        <MockLogo />
         <Box>
             <Tooltip title="Setting">
                 <IconButton onClick={() => { handleSetIsOpenSettingModal(true) }}>

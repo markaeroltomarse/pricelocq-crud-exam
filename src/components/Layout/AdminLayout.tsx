@@ -1,7 +1,6 @@
 import { Box, Snackbar } from '@mui/material';
 import React, { useEffect } from 'react';
-import { useAppSelector, usePostHook } from 'src/hooks';
-import useFeedbackState from 'src/hooks/useFeedbackState';
+import { useAppSelector, useFeedbackState, usePostHook } from 'src/hooks';
 import { DeleteConfirmationDialog } from '../Dialog';
 import { AdminDrawer } from '../Drawer';
 import Footer from '../Footer/Footer';

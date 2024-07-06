@@ -1,6 +1,6 @@
 // APP TEXT
-export const APP_TITLE = 'SEAOIL CRUD App';
-export const APP_DESCRIPTION = 'CRUD application for SEAOIL using React, TypeScript, and Material-UI.';
+export const APP_TITLE = 'React CRUD App';
+export const APP_DESCRIPTION = 'CRUD application using React, TypeScript, and Material-UI.';
 export const FOOTER_TEXT = `${new Date().getFullYear()} Developed by Mark Aerol Tomarse`;
 
 // PAGES TITLE

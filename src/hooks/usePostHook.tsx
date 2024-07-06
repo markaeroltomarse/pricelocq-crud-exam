@@ -3,9 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useAddPostMutation, useDeletePostMutation, useLazyGetPostQuery, useLazyGetPostsQuery, useUpdatePostMutation } from "src/store/api/postApi";
 import { addPost, setDeletePost, setEditPost, setPosts, setSelectedPosts, updatePost } from "src/store/reducers/postsReducer";
 import { TPost } from "src/types";
-import { useAppDispatch } from "./useAppDispatch";
-import { useAppSelector } from "./useAppSelector";
-import useFeedbackState from "./useFeedbackState";
+import { useAppDispatch, useAppSelector, useFeedbackState } from ".";
 
 export interface usePostHookProps {
 

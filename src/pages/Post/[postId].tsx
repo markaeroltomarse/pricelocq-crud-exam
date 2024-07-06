@@ -2,6 +2,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import SignpostIcon from '@mui/icons-material/Signpost';
 import { Box, Button, Card, Divider, Skeleton, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useNavigate, useParams } from 'react-router-dom';
 import { AdminLayout } from 'src/components/Layout';
 import { useAppSelector, usePostHook } from 'src/hooks';
@@ -35,6 +36,12 @@ const PostPage: React.FC<IPostPageProps> = () => {
     }, [postStore, navigate])
 
     return <AdminLayout>
+        <Helmet>
+            <title>{post?.title}</title>
+            <meta name='description' content={post?.body} />
+            <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap' />
+            <meta name='viewport' content='initial-scale=1, width=device-width' />
+        </Helmet>
         <Card
             variant='outlined'
             style={{
